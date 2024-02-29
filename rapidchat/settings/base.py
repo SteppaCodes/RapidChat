@@ -24,7 +24,11 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-LOCAL_APPS = []
+LOCAL_APPS = [
+    'apps.accounts',
+    # 'apps.common',
+    # 'apps.chat'
+]
 
 THIRD_PARTY_APPS = [
 
@@ -32,7 +36,7 @@ THIRD_PARTY_APPS = [
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 
-AUTH_USR_MODEL = 'accounts.User'
+AUTH_USER_MODEL = 'accounts.User'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
